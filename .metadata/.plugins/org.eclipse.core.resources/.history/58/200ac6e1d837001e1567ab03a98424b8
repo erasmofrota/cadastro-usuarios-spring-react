@@ -1,0 +1,15 @@
+package aplicacao.cadastropessoas.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+
+public enum TelefoneType {
+	TELEFONE("Telefone"),
+    CELULAR("Celular");
+
+    private final String description;
+
+}

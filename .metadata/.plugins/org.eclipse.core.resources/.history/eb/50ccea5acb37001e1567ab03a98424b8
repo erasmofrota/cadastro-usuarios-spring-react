@@ -1,0 +1,5 @@
+package aplicacao.cadastropessoas.model;
+
+public @interface Phone {
+
+}

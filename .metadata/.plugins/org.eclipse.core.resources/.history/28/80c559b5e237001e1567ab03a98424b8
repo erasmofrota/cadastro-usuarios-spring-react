@@ -1,0 +1,69 @@
+package aplicacao.cadastropessoas.model;
+
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+import org.hibernate.validator.constraints.br.CPF;
+import org.hibernate.validator.constraints.br.CNPJ;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import aplicacao.cadastropessoas.entity.Telefone;
+
+/**
+ * Nome - obrigatório
+ * E-mail - obrigatório, deve ser validado caso preenchido
+ * Telefone - obrigatório
+ */
+
+@Data
+@ApiModel(value = "Pessoa", description = "Representa uma pessoa")
+@Table(name = "pessoa")
+@Entity
+public class Pessoa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotBlank(message = "Favor preencher campo nome.")
+    private String nome;
+
+    @Enumerated(EnumType.STRING)
+    private CpfCnpjEnum cpf_cnpj;
+    
+    @NotNull
+    @CPF(message = "Favor preencher um CPF válido.")
+    private String cpf;
+    
+    @NotNull
+    @CNPJ(message = "Favor preencher um CNPJ válido.")
+    private String cnpj;
+
+    
+    private List<Telefone> telefone;
+    
+    @Email(message = "Favor preencher um endereço e-mail válido.")
+    private String email;
+    
+  
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
+    private LocalDateTime dataDeCadastro;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
+    private LocalDateTime dataDeAtualizacao;
+
+	public List<Telefone> getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(List<Telefone> telefone) {
+		this.telefone = telefone;
+	}
+}

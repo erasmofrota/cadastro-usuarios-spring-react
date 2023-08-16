@@ -1,0 +1,45 @@
+body {
+    background-color: #fff;
+    color: #fff;
+  }
+  
+  .MuiPaper-root {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .MuiTableHead-root {
+    background-color: #1f1f1f;
+  }
+  
+  .MuiTableRow-root {
+    &:nth-of-type(odd) {
+      background-color: #333333;
+    }
+  }
+  
+  .MuiTableCell-root {
+    border-bottom: 1px solid #424242;
+  }
+  
+  .MuiInputLabel-root {
+    color: #ffffff;
+  }
+  
+  .MuiInputBase-root {
+    color: #ffffff;
+  }
+  
+  .MuiFormLabel-root {
+    color: #ffffff;
+  }
+  
+  .MuiSelect-root {
+    color: #ffffff;
+  }
+  
+  .MuiButton-containedPrimary {
+    background-color: #1976d2;
+    color: #ffffff;
+  }
+  

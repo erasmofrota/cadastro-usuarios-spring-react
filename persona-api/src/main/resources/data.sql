@@ -1,0 +1,1 @@
+INSERT INTO pessoa (nome,  cpf_cpnj, email, telefone, endereco_residencial ) values ('Antonio Lima', '12345678900', '85988776655', 'Rua: Piripiri, 123, Fortaleza, CE','xxx@basis.com.br', current_timestamp);

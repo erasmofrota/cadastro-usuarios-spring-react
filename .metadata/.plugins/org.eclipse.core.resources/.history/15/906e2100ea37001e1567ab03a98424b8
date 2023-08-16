@@ -1,0 +1,5 @@
+package com.basis.personaapi.entity;
+
+public class Pessoa {
+
+}

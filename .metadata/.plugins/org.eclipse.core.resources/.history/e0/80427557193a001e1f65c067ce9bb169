@@ -1,0 +1,5 @@
+package com.basis.personaapi.resources;
+
+public class EnderecoResource {
+
+}

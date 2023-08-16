@@ -1,0 +1,5 @@
+package com.basis.personaapi.resources.exceptions;
+
+public class StandardError {
+
+}

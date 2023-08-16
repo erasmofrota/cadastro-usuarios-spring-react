@@ -1,0 +1,5 @@
+package com.basis.personaapi.services;
+
+public class PessoaService {
+
+}

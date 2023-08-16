@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=/home/erasmo/www/testes/taxPayer-api/.git\:/home/erasmo/www/testes/personapi_dio/.git\:
+GitRepositoriesView.GitDirectories.relative=taxPayer-api/.git\:personapi_dio/.git\:
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

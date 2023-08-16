@@ -1,0 +1,5 @@
+package com.basis.personaapi.config;
+
+public class CorsApi {
+
+}

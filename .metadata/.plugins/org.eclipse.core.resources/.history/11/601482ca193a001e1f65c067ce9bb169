@@ -1,0 +1,14 @@
+package com.basis.personaapi.resources;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.basis.personaapi.services.EnderecoService;
+
+@RestController
+@RequestMapping(value = "/enderecos")
+public class EnderecoResource {
+	
+	@Autowired
+	private EnderecoService service;
+
+}
